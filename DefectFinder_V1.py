@@ -18,7 +18,7 @@ def ExcitationCount(InputFile, IdealBondLength = IDEAL_BOND_LENGTH, Path = ""):
     ATOM_COUNT = int(datf[0])
     COL_NUM = 4                                                                      #4 is the default for .xyz files 
 
-    indexes = [i for i, x in enumerate(datf) if x == '74088']
+    indexes = [i for i, x in enumerate(datf) if x == datf[0]]
 
     indexes.reverse()
     TIMESTEP_LIST = []
